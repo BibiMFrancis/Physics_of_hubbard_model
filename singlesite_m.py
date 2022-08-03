@@ -17,7 +17,7 @@ def number_density (beta , mu , U ):
 # Double occupancy
 def double_occupancy (beta, mu, U):
 	Z= partition_function (beta, mu, U)
-	return (2/Z) * (np.exp (2*beta*mu - beta*(U/4)))
+	return (1/Z) * (np.exp (2*beta*mu - beta*(U/4)))
 
 #Local Moment
 def local_moment (beta, mu, U):
